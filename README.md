@@ -1,5 +1,7 @@
-
 # "Dummy Switches and Contact" Plugin
+
+This code is heavily based on the work of Nick Farina's [homebridge-dummy](https://github.com/nfarina/homebridge-dummy) accessory, and that of [NorthernMan54](https://github.com/NorthernMan54/) from whom I inherited this fork.
+
 
 Example config.json:
 
@@ -51,7 +53,7 @@ You may also want to create a dummy switch that turns itself on one second after
 
 ## Timed Switches
 
-You may also want to create a timed switch that turns itself off after being on for a given time (for example, five seconds). This can be done by passing the 'time' argument in your config.json:
+You may also want to create a timed switch that turns itself off after being on for a given time (for example, five seconds). The switch can be repeatedly turned on prior to the timer expiration, which will reset the timer. This can be done by passing the 'time' argument in your config.json:
 
 ```
     "accessories": [
@@ -65,9 +67,9 @@ You may also want to create a timed switch that turns itself off after being on 
 ```
 
 
-## My modified version of this Homebridge plugin creates an optional Contact Sensor to complement the switch.
+## This modified version of this Homebridge plugin creates an optional Contact Sensor to complement the switch.
 
-This is to allow my plugin homebridge-alexa the ability to trigger routines from the contact sensor.  Also, by default each DummySwitch is a Lightbulb.  This can be changed by passing the 'switch' argument in your config.json:
+This is to allow NorthernMan54's plugin [homebridge-alexa](https://github.com/NorthernMan54/homebridge-alexa) the ability to trigger routines from the contact sensor.  Also, by default each DummySwitch is a Lightbulb.  This can be changed by passing the 'switch' argument in your config.json:
 ```
     "accessories": [
         {
