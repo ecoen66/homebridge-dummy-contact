@@ -16,6 +16,7 @@ function DummySwitch(log, config) {
   this.stateful = config.stateful;
   this.reverse = config.reverse;
   this.contact = config['contact'] || false;
+  this.contactName = config.contactName || this.name;
   this.time = config.time ? config.time : 1000;
   this.switch = config['switch'] || false;
   this.timerObject = null;
@@ -29,7 +30,7 @@ function DummySwitch(log, config) {
       .addCharacteristic(Characteristic.Brightness);
   }
 
-  this._contact = new Service.ContactSensor(this.name);
+  this._contact = new Service.ContactSensor(this.contactName);
 
   this.cacheDirectory = HomebridgeAPI.user.persistPath();
   this.storage = require('node-persist');

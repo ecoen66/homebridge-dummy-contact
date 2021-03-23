@@ -28,6 +28,12 @@
                 "default": false,
                 "description": "The switch includes a combined contact sensor."
             },
+            "contactName": {
+                "title": "Contact Name",
+                "type": "string",
+                "default": "",
+                "description": "A name for the contact sensor. Defaults to the name of the switch"
+            },
             "reverse": {
                 "title": "Reverse",
                 "type": "boolean",
