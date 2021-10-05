@@ -76,7 +76,8 @@ This is to allow NorthernMan54's plugin [homebridge-alexa](https://github.com/No
           "accessory": "DummySwitch",
           "name": "My Switch with Contact",
           "switch": true,
-          "contact": true
+          "contact": true,
+          "contactName": "My Contact"
         }   
     ]
 
