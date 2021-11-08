@@ -1,6 +1,6 @@
 {
   "name": "homebridge-dummy-contact",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Dummy switches for Homebridge: https://github.com/nfarina/homebridge",
   "license": "ISC",
   "keywords": [
@@ -14,10 +14,10 @@
     "url": "http://github.com/NorthernMan54/homebridge-dummy-contact/issues"
   },
   "engines": {
-    "node": ">=14.17.6",
-    "homebridge": ">=1.3.4"
+    "node": ">=16.13.0",
+    "homebridge": ">=1.3.5"
   },
   "dependencies": {
-    "node-persist": "^2.1.0"
+    "node-persist": "^3.1.0"
   }
 }

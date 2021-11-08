@@ -6,7 +6,7 @@ module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
   HomebridgeAPI = homebridge;
-  homebridge.registerAccessory("homebridge-dummy", "DummySwitch", DummySwitch);
+  homebridge.registerAccessory("homebridge-dummy-contact", "DummySwitch", DummySwitch);
 };
 
 
