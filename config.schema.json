@@ -10,6 +10,11 @@
                 "type": "string",
                 "required": true
             },
+            "serial": {
+                "title": "Serial Number",
+                "type": "string",
+                "required": false
+            },
             "stateful": {
                 "title": "Stateful",
                 "type": "boolean",

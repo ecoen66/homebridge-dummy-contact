@@ -21,6 +21,14 @@ function DummySwitch(log, config) {
   this.switch = config['switch'] || false;
   this.timerObject = null;
   this.debug = config['debug'] || false;
+  this.serial = config["serial"] === undefined ? config["name"] : config["serial"];
+  
+	this._informationService = new Service.AccessoryInformation();
+	this._informationService
+			.setCharacteristic(Characteristic.Manufacturer, "DummySwitch")
+			.setCharacteristic(Characteristic.Model, "DummySwitch")
+			.setCharacteristic(Characteristic.SerialNumber, this.serial);
+
 
   if (this.switch) {
     this._service = new Service.Switch(this.name);
@@ -58,9 +66,9 @@ function DummySwitch(log, config) {
 
 DummySwitch.prototype.getServices = function() {
   if (this.contact) {
-    return [this._service, this._contact];
+    return [this._service, this._contact, this._informationService];
   } else {
-    return [this._service];
+    return [this._service, this._informationService];
   }
 };
 
