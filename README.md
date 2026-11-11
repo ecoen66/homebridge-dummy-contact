@@ -1,3 +1,8 @@
+# THIS CODE IS NO LONGER BEING DEVELOPED/SUPPORTED BY THE AUTHOR
+I have not used homebridge for a few years now.
+
+
+
 # "Dummy Switches and Contact" Plugin
 
 This code is heavily based on the work of Nick Farina's [homebridge-dummy](https://github.com/nfarina/homebridge-dummy) accessory, and that of [NorthernMan54](https://github.com/NorthernMan54/) from whom I inherited this fork.
